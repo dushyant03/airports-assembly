@@ -1,6 +1,5 @@
 FROM java:8
-RUN apt-get install git -y
-WORKDIR /
-ADD airports-assembly-1.0.1.jar airports-assembly-1.0.1.jar
+WORKDIR /opt/airports/
+ADD airports-assembly-1.1.0.jar airports-assembly-1.1.0.jar
 EXPOSE 8080
-CMD java -jar airports-assembly-1.0.1.jar
+CMD java -jar airports-assembly-1.1.0.jar
